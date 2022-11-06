@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Etiquetas HTML</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <video src="/img/hero.mp4" autoplay="autoplay" loop="loop" id="video_background" preload="auto" onloadedmetadata="this.muted=true"></video>
+    <header>
+        <div class="nav">
+            <div class="logo">
+                <img src="img/logo.png" alt="logo">
+                <p class="material-symbols-outlined">&#160uben</p>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#">WEB</a></li>
+                    <li><a href="#">GRÁFICO</a></li>
+                    <li><a href="#">SEO</a></li>
+                    <li><a href="#">FORMACIÓN</a></li>
+                    <li><a href="#">EMPRESA</a></li>
+                    <li><a href="#">TRABAJOS</a></li>
+                    <li><a href="#">BLOG</a></li>
+                    <li><a href="#">CONTACTO</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <h1>ETIQUETAS HTML</h1>
+    <div class="contenido">
+        <section class="hero">
+            <img src="/img/hero.jpg" alt="hero">
+        </section>
+
+        <aside>
+            <ul class="indice">
+                <h4>Índice de contenidos</h4>
+                <li><span>1 </span><a href="#1">¿Qué es una etiqueta HTML?</a></li>
+                <li><span>2 </span><a href="#2">Listado etiquetas HTML</a></li>
+                <ul>
+                        <li><span>2.1 </span><a href="#2-1">Etiquetas iniciales o de raíz</a></li>
+                        <li><span>2.2 </span><a href="#2-2">Metadatos del documento</a></li>
+                        <li><span>2.3 </span><a href="#2-3">Etiquetas de secciones o para estructurar el HTML</a></li>
+                        <li><span>2.4 </span><a href="#2-4">Etiquetas para la agrupación de contenido</a></li>
+                        <li><span>2.5 </span><a href="#2-5">Etiquetas semánticas para texto</a></li>
+                        <li><span>2.6 </span><a href="#2-6">Etiquetas para incrustar contenido</a></li>
+                        <li><span>2.7 </span><a href="#2-7">Etiquetas para la creación de tablas</a></li>
+                        <li><span>2.8 </span><a href="#2-8">Etiquetas para la creación de formularios</a></li>
+                </ul>
+                <li><span>3 </span><a href="#3">Conclusión</a></li>
+            </ul>
+        </aside>
+
+        <main>
+            <div class="mainSet">
+                <section class="mainSect" id="1">
+                    <h2>¿QUÉ ES UNA ETIQUETA HTML?</h2>
+                    <p>Antes de entrar en materia, conviene explicar de que vamos a hablar. Las etiquetas HTML son pequeños bloques de código, que indican al navegador como debe interpretar el contenido recogido entre dichas etiquetas. Por ejemplo, si queremos «pintar» un párrafo de texto, hay una etiqueta especifica para que el navegador interprete ese texto como un párrafo. Estas etiquetas cuentan además con <strong>atributos</strong> que podemos añadir y que en sí, pueden determinar como será el comportamiento específico que tendrá la etiqueta. Te dejo por aquí un <a href="#">listado de atributos</a> HTML para complementar esta entrada. <br><br> Las etiquetas HTML comienzan siempre con el símbolo «<» y finalizan con el símbolo «>». Entre medias de estos dos símbolos irá el nombre de la etiqueta que queremos que el navegador interprete. <br><br> Todas las etiquetas HTML están compuestas por una etiqueta de apertura, y una etiqueta de cierre. Aunque hay excepciones, como por ejemplo la etiqueta para cargar una imagen que son llamadas etiquetas huérfanas, ya que solo tienen etiqueta de apertura. <br><br> Las etiquetas de cierre se construyen con una barra «/» justo antes de la propia etiqueta y los símbolos «<» y «>». Resumiendo, si queremos «pintar» un párrafo en la página web, abriremos con la etiqueta de apertura de párrafo «&lt;p&gt;», y cerraríamos con la etiqueta de cierre «&lt;/p&gt;».
+                    <pre><code>&lt;p&gt;Esto es un párrafo&lt;/p&gt;</code></pre>
+                    Una vez que conocemos que son las etiquetas y como implementarlas en nuestro código web, pasemos a ver un listado de las <strong>etiquetas HTML más comunes</strong>
+                    </p>
+                </section>
+                <hr>
+                <section class="mainSect" id="2">
+                    <h2>LISTADO DE ETIQUETAS HTML</h2>
+                    <p>A continuación voy a indicarte cuales son las etiquetas HTML más usadas y también te indicaré su finalidad. Voy a centrarme en las principales etiquetas y sobre todo las que están soportadas en <strong>HTML 5</strong>. Ahí van</p>
+                </section>
+                <hr>
+
+                <section class="mainSection" id="2-1">
+                    <h3>ETIQUETAS INICIALES O DE RAIZ</h3>
+                    <p><strong><code>&lt;!DOCTYPE! html&gt;</code></strong> Indica al navegador que el documento está basado en el estándar HTML5</p>
+                    <p><strong><code>&lt;html>&lt;/html></code></strong> Representa la raíz de un documento HTML. Todos los demás elementos de la estructura HTML deben ser recogidos dentro de estas etiquetas.</p> 
+                </section>
+                <section class="mainSection" id="2-2">
+                    <h3>METADATOS DEL DOCUMENTO</h3>
+
+                    <p><strong><code>&lt;head&gt;&lt;/head&gt;</code></strong> Representa una colección de metadatos acerca del documento, incluyendo enlaces a, o definiciones de, scripts y hojas de estilo. El resto de etiquetas de metadatos, <strong>irán recogidas dentro de las etiquetas de apertura y cierre del head</strong>. Importante explicar que estos metadatos del documento, es información para el navegador y no contenido que será visible en la página web. A excepción de la etiqueta &lt;title&gt; que veremos a continuación.</p>
+                    <p><strong><code>&lt;title&gt;&lt;/title&gt;</code></strong> Etiqueta usada para definir el título de la página web.</p>
+                    <p><strong><code>&lt;link&gt;</code></strong> Se usa para enlazar recursos externos al documento HTML. El ejemplo más común son las hojas de estilos CSS.</p>
+                    <p><strong><code>&lt;meta&gt;</code></strong> Etiqueta usada para definir otros metadatos que no se pueden definir con una etiqueta HTML especifica. Por ejemplo para definir el autor del sitio, o la descripción del mismo.</p>
+                    <p><strong><code>&lt;style&gt;&lt;/style&gt;</code></strong> Etiquetas usadas para introducir código CSS en línea, es decir, en el propio documento HTML.</p>
+                </section>
+                <section class="mainSection" id="2-3">
+                    <h3>ETIQUETAS DE SECCIONES O PARA ESTRUCTURAR EL HTML</h3>
+
+                    <p><strong><code>&lt;body&gt;&lt;/body&gt;</code></strong> Al contrario que la etiqueta de metadatos <head>, todo lo que quieras mostrar en la página web debe ir recogido dentro de las etiquetas de apertura y cierre de &lt;body&gt; <strong>Este contenido será el que se muestre en la web</strong>.</p>
+                    <p><strong><code>&lt;nav&gt;&lt;/nav&gt;</code></strong> Usadas para definir el contenido que será la sección de navegación de la web.</p>
+                    <p><strong><code>&lt;main&gt;&lt;/main&gt;</code></strong> Se usa para definir el contenido principal del documento. Solamente puede existir uno por documento.</p>
+                    <p><strong><code>&lt;section&gt;&lt;/section&gt;</code></strong> Define una sección del documento.</p>
+                    <p><strong><code>&lt;article&gt;&lt;/article&gt;</code></strong> Define contenido independiente de la web.</p>
+                    <p><strong><code>&lt;aside&gt;&lt;/aside&gt;</code></strong> Dentro de estas etiquetas suele alojarse el contenido adicional de la web. Suele ser contenido relacionado con la web pero de poca importancia.</p>
+                    <p><strong><code>&lt;h1&gt;,&lt;h2&gt;,&lt;h3&gt;,&lt;h4&gt;,&lt;h5&gt;,&lt;h6&gt;</code></strong> Etiqueta usada para definir el título de la página web.</p>
+                    <p><strong><code>&lt;header&gt;&lt;/header&gt;</code></strong> Se usan para definir la cabecera la página web. Suele contener el logotipo, menú de navegación, etc.</p>
+                    <p><strong><code>&lt;footer&gt;&lt;/footer&gt;</code></strong> Usadas para definir el pie de página.</p>
+                </section>
+                <section class="mainSection" id="2-4">
+                    <h3>ETIQUETAS PARA LA AGRUPACIÓN DE CONTENIDO</h3>
+
+                    <p><strong><code>&lt;p&gt;&lt;/p&gt;</code></strong> Etiqueta usada para escribir párrafos de texto.</p>
+
+                    <p><strong><code>&lt;hr&gt;</code></strong> Etiqueta utilizada para «romper» entre dos secciones de una web. Usada comúnmente como separador.</p>
+
+                    <p><strong><code>&lt;pre&gt;&lt;/pre&gt;</code></strong> Usada para pegar texto manteniendo el pre formato propio del texto.</p>
+                    <p><strong><code>&lt;blockquote&gt;&lt;/blockquote&gt;</code></strong> Se usan para indicar que el contenido es texto citado.</p>
+                    <p><strong><code>&lt;ol&gt;&lt;/ol&gt;</code></strong> Etiquetas para crear una lista ordenada</p>
+                    <p><strong><code>&lt;ul&gt;&lt;/ul&gt;</code></strong> Etiquetas para crear una lista des-ordenada</p>
+                    <p><strong><code>&lt;li&gt;&lt;/li&gt;</code></strong> Etiquetas que recogen el contenido de un elemento de una lista, sea ordenada o no.</p>
+                    <p><strong><code>&lt;dl&gt;&lt;/dl&gt;</code></strong> Usada para crear una lista de definiciones.</p>
+                    <p><strong><code>&lt;dt&gt;&lt;/dt&gt;</code></strong> Representa un término definido por la siguiente etiqueta &lt;dd&gt</p>
+                    <p><strong><code>&lt;figure&gt;&lt;/figure&gt;</code></strong> Indica una figura ilustrada como parte del documento HTML5.</p>
+                    <p><strong><code>&lt;figcaption&gt;&lt;/figcaption&gt;</code></strong> Utilizada para definir la leyenda de una figura.</p>
+                    <p><strong><code>&lt;div&gt;&lt;/div&gt;</code></strong> Etiqueta común utilizada para crear un contenedor genérico.</p>
+                </section>
+
+                <hr>
+                <div class="sugerencia">
+                    <h2>Complementa este listado de etiquetas con nuestro <a href="#">listado de todos los atributos HTML</a> que existen</h2>
+                </div>
+                <hr>
+
+                <section class="mainSection" id="2-5">
+                    <h3>ETIQUETAS SEMANTICAS PARA TEXTO</h3>
+
+                    <p><strong><code>&lt;a&gt;&lt;/a&gt;</code></strong> Etiqueta utilizada para crear hiperenlaces en el documento HTML.</p>
+
+                    <p><strong><code>&lt;strong&gt;&lt;/strong&gt;</code></strong> Etiqueta para definir una palabra o conjunto de ellas como importantes. Tiene una fuerte importancia en el SEO de la página.</p>
+                    <p><strong><code>&lt;small&gt;&lt;/small&gt;</code></strong> Utilizada para dejar un comentario aparte, del tipo una nota de derechos de autoría, u otros textos que no son esenciales para la comprensión del documento.</p>
+                    <p><strong><code>&lt;cite&gt;&lt;/cite&gt;</code></strong> Para indicar el título de una obra.</p>
+                    <p><strong><code>&lt;sub&gt;&lt;/sub&gt;</code></strong> y <strong><code>&lt;sup&gt;&lt;/sup&gt;</code></strong>  Etiquetas utilizadas para representar un subíndice o superíndice.</p>
+                    <p><strong><code>&lt;mark&gt;&lt;/mark&gt;</code></strong> Usada para resaltar texto</p>
+                    <p><strong><code>&lt;span&gt;&lt;/span&gt;</code></strong> Etiqueta HTML sin ningún significado específico. Se usa conjuntamente con los atributos «class» o «id» para atribuirle ciertas características.</p>
+                    <p><strong><code>&lt;br&gt;</code></strong> Etiqueta utilizada para crear un salto de línea</p>
+                </section>
+                <section class="mainSection" id="2-6">
+                    <h3>ETIQUETAS SEMANTICAS PARA TEXTO</h3>
+
+                    <p><strong><code>&lt;img&gt;</code></strong> Etiqueta para «pintar» una imagen en la página web.</p>
+
+                    <p><strong><code>&lt;iframe&gt;&lt;/iframe&gt;</code></strong> Etiqueta utilizada para crear hiperenlaces en el documento HTML.</p>
+                    <p><strong><code>&lt;embed&gt;</code></strong> Usada para integrar una aplicación o contenido interactivo externo que no suele ser HTML.</p>
+                    <p><strong><code>&lt;object&gt;&lt;/object&gt;</code></strong> Utilizada llamar a un recurso externo de la web. Este recurso será tratado como una imagen, o un recurso externo para ser procesado por un plugin.</p>
+                    <p><strong><code>&lt;video&gt;&lt;/video&gt;</code></strong> Se usa para reproducir video en la página web junto a sus archivos de audio y capciones asociadas.</p>
+                    <p><strong><code>&lt;audio&gt;&lt;/audio&gt;</code></strong> Usada para cargar en una web un archivo de audio o stream de audio.</p>
+                    <p><strong><code>&lt;source&gt;</code></strong> Permite a autores especificar recursos multimedia alternativos para las etiquetas de &lt;video&gt; o &lt;audio&gt;</p>
+                    <p><strong><code>&lt;svg&gt;&lt;/svg&gt;</code></strong> Se usa para llamar a una imagen vectorizada.</p>
+                </section>
+                <section class="mainSection" id="2-7">
+                    <h3>ETIQUETAS PARA CREACION DE TABLAS</h3>
+
+                    <p><strong><code>&lt;table&gt;&lt;/table&gt;</code></strong> Etiquetas de apertura y cierre de una tabla. El resto de etiquetas de la tabla han de ir siempre recogidas entre estas dos etiquetas.</p>
+                    <p><strong><code>&lt;caption&gt;&lt;/caption&gt;</code></strong> Usada para indicar el título de la tabla.</p>
+                    <p><strong><code>&lt;colgroup&gt;&lt;/colgroup&gt;</code></strong> Etiqueta utilizada para agrupar dos o más columnas de una tabla.</p>
+
+                    <p><strong><code>&lt;tbody&gt;&lt;/tbody&gt;</code></strong> Usada para describir los datos concretos de una tabla.</p>
+                    <p><strong><code>&lt;thead&gt;&lt;/thead&gt;</code></strong> Indica el bloque de filas que describen las etiquetas de las columnas de la tabla.</p>
+                    
+                    <p><strong><code>&lt;tfoot&gt;&lt;/tfoot&gt;</code></strong> Indica los bloques de filas que describen los resúmenes, o datos totales de una columna de una tabla.</p>
+                    <p><strong><code>&lt;tr&gt;&lt;/tr&gt;</code></strong> Se usa para indicar una fila de celdas de una tabla.</p>
+                    <p><strong><code>&lt;td&gt;&lt;/td&gt;</code></strong> Usada para definir una celda de una tabla.</p>
+                    <p><strong><code>&lt;th&gt;&lt;/th&gt;</code></strong> Etiqueta que se usa para definir el encabezado de una celda</p>
+                </section>
+                <section class="mainSection" id="2-8">
+                    <h3>ETIQUETAS PARA CREACION DE FORMULARIOS</h3>
+
+                    <p><strong><code>&lt;form&gt;&lt;/form&gt;</code></strong> Etiqueta de apertura y cierre de un formulario de una página web. El resto de etiquetas de formulario deben ir siempre recogidas entre estas etiquetas de apertura y cierre de formulario.</p>
+                    <p><strong><code>&lt;fieldset&gt;&lt;/fieldset&gt;</code></strong> Etiqueta que representa un conjunto o agrupación de elementos de un formulario. «Pinta» un recuadro alrededor de las etiquetas que estén contenidas dentro del &lt;fieldset&gt;</p>
+                    <p><strong><code>&lt;legend&gt;&lt;/legend&gt;</code></strong> Etiqueta ligada a &lt;fieldset&gt;. Indica el título del &lt;fieldset&gt;</p>
+                    <p><strong><code>&lt;label&gt;&lt;/label&gt;</code></strong> Se usa para definir el nombre o título de un control del formulario.</p>
+                    <p><strong><code>&lt;input&gt;</code></strong> Pinta un campo de introducción de datos para el usuario. Es de las principales etiquetas de un formulario.</p>
+                    <p><strong><code>&lt;buttonl&gt;&lt;/buttonl&gt;</code></strong> Etiqueta utilizada para representar un botón en el formulario.</p>
+                    <p><strong><code>&lt;select&gt;&lt;/select&gt;</code></strong> Input que permite una selección entre un conjunto de opciones.</p>
+                    <p><strong><code>&lt;option&gt;&lt;/option&gt;</code></strong> Etiqueta ligada a &lt;select&gt;. Permite añadir diferentes opciones al &lt;select&gt;</p>
+                    <p><strong><code>&lt;textarea&gt;&lt;/textarea&gt;</code></strong> Añade un campo al usuario para que pueda introducir texto en unas líneas máximas de texto que el desarrollador puede definir.</p>
+                </section>
+
+                <hr>
+                <section id="3" class="mainSect" >
+                    <h2>CONCLUSIÓN</h2>
+                    <p>Además de las etiquetas HTML que aquí te he mostrado, existen muchas más. Pero sinceramente, creo que con este listado podrás hacer el 99% de las páginas web. Y si tienes dudas con alguna etiqueta, o bien has encontrado alguna de la que no te he hablado aquí y quieres saber más, consulta el siguiente enlace. Iras a la página del World Wide Web Consortium o W3C, que como le digo a mis alumnos del curso de diseño web, son la referencia donde consultar primero cualquier duda sobre HTML y CSS.</p>
+                </section>
+            </div>
+        </main>
+    </div>
+
+    <footer id="contacto">
+        <section class="icons">
+            <a target="_blank" href="https://www.google.com/"><img src="/img/icons/google.png" alt="google"></a>
+            <a target="_blank" href="https://es.wikipedia.org/wiki/Wikipedia:Portada"><img src="/img/icons/wiki.png" alt="wiki"></a>
+            <a target="_blank" href="https://carontestudio.com/blog/listado-de-etiquetas-html/#Etiquetas_iniciales_o_de_raiz"><img src="img/icons/caronte-web-estudio-logo.png" alt="caronte-logo"></a>
+        </section>
+
+        <section class="datos">
+            <div class="ubicacion dato">
+                <p>Av. ###### ########## ###, ## #####-###</p>
+                <p>#########</p>
+            </div>
+            <div class="socialNet dato">
+                    <img src="img/icons/facebook.png" alt="facebook">
+                    <img src="img/icons/instagram.png" alt="instagram">
+                    <img src="img/icons/twitter.png" alt="twitter">
+                    <img src="img/icons/whatsapp.png" alt="whatsapp">
+            </div>
+            <div class="developerWeb dato">
+                <h5>Rubén Mantilla Quiroz</h5>
+            </div>
+        </section>
+    </footer>
+</body>
+</html>
