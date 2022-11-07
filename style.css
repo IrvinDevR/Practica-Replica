@@ -6,7 +6,6 @@
     margin: 0;
     padding: 0;
     text-decoration: none;
-    font-family: 'Roboto', sans-serif;
 }
 
 :root{
@@ -15,6 +14,10 @@
     --bgc-color3: #333666;
     --bgc-color4: #333fff;
     --ff-nav: 'Roboto Condensed', sans-serif;
+    --ff-indice: 'Roboto Condensed', sans-serif;
+    --ff-paragraph: 'Roboto', sans-serif;
+    --ff-h1: 'Roboto', sans-serif;
+    --ff-subtitle: 'Roboto', sans-serif;
 }
 
 body video{
@@ -87,11 +90,14 @@ nav ul{
 h1{
     width: 81.5%;
     max-width: 1200px;
+    padding-top: 15px;
+    padding-bottom: 15px;
     margin: 0 auto 20px;
     text-align: center;
     font-size: 45px;
     background-color: #fff;
     color: var(--bgc-color3);
+    font-family: var(--ff-h1);
 }
 
 img[alt="hero"]{
@@ -106,12 +112,15 @@ img[alt="hero"]{
 /*//////////////// INDICE ///////////////*/
 
 aside{
-    position: absolute;
+    position: sticky;
+    top: 15px;
     margin: 25px 0px 0 30px;
-    width: 24%;
+    width: 30%;
     max-width: 350px;
+    z-index: 100;
 }
 .indice{
+    font-family: var(--ff-indice);
     list-style: none;
     width: 90%;
     border: 1px solid #333666;
@@ -141,6 +150,8 @@ aside{
 main{
     width: 67%;
     margin-left: 33%;
+    margin-top: -415px;
+    font-family: var(--ff-subtitle);
 }
 .mainSet{
     width: 95%;
@@ -151,6 +162,8 @@ main{
 .mainSect h2{
     margin: 25px 0 10px 0;
     color: var(--bgc-color3);
+    font-family: var(--ff-subtitle);
+
 }
 .mainSection h3{
     margin: 25px 0 8px 0;
@@ -162,9 +175,14 @@ main{
     font-family: "Roboto", sans-serif;
     font-size: 15px;
     line-height: 22px;
+    font-family: var(--ff-paragraph);
 }
 .mainSection code{
     font-size: 16px;
+    border: 1px solid #333666;
+    background-color: var(--bgc-color1);
+    padding: 0 5px;
+    font-weight: 300;
 }
 pre{
     border: 1px solid #333666;
@@ -195,7 +213,6 @@ footer{
     flex-direction: column;
     justify-content: space-around;
     margin: 0 auto;
-
 }
 
 .icons{
@@ -203,11 +220,9 @@ footer{
     display: flex;
     justify-content: center;
 }
-
 .icons a img{
     height: 100px;
 }
-
 .datos{
     margin-top: 40px;
     display: flex;
@@ -218,6 +233,8 @@ footer{
 }
 .dato{
     width: 33%;
+    font-size: 20px;
+    font-weight: 300;
 }
 .socialNet{
     width: auto;
@@ -226,5 +243,24 @@ footer{
     height: 35px;
 }
 .developerWeb h5{
+    font-weight: 300;
     text-align: end;
+}
+.reservados{
+    margin: 0 auto;
+    width: 81.5%;
+    height: 40px;
+    color: #fff;
+}
+.reservados hr{
+    border: 1px solid #fff;
+}
+
+.derechos{
+    padding-top: 8px;
+    text-align: center;
+    font-weight: 300;
+}
+.derechos span{
+    font-size: 17px;
 }
