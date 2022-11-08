@@ -28,13 +28,6 @@ body video{
     z-index: -1000;
 }
 
-.contenido{
-    width: 81.5%;
-    margin: 0 auto;
-    background-color: #ffffff;
-    max-width: 1200px;
-}
-
 /*//////////////// NAV ///////////////*/
 
 header{
@@ -56,7 +49,7 @@ img[alt="logo"]{
     height: 30px;
 }
 
-.nav{
+.nave{
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -82,9 +75,16 @@ nav ul{
 
 /*//////////////// HERO ///////////////*/
 
-h1{
+.hero, .hero-img{
     width: 81.5%;
-    max-width: 1200px;
+    margin: 0 auto;
+    max-width: 1200px; 
+}
+.hero-img{
+    width: 100%;
+}
+h1{
+    max-width: 1200px; 
     padding-top: 15px;
     padding-bottom: 15px;
     margin: 0 auto 20px;
@@ -96,28 +96,36 @@ h1{
 }
 
 img[alt="hero"]{
-    width: 80vw;
-    overflow: cover;
     width: 100%;
     max-width: 1200px;
-    border-bottom: 3px solid #333fff;
 }
 
+
+/*/////////////// CONTENIDO ///////////////////*/
+
+.contenido{
+    width: 81.5%;
+    margin: 25px auto 0;
+    padding: 15px 0;
+    background-color: #ffffff;
+    max-width: 1200px;
+
+}
 
 /*//////////////// INDICE ///////////////*/
 
 aside{
+    width: 25%;
     position: sticky;
-    top: 10px;
-    margin: 25px 0px 0 30px;
-    width: 30%;
+    top: 25px;
+    padding: 0 0 0 25px;
+    margin: 20px;
     max-width: 350px;
-    z-index: 100;
+    z-index: 1000;
 }
 .indice{
     font-family: var(--ff-indice);
     list-style: none;
-    width: 90%;
     border: 1px solid #333666;
     padding: 20px;
     background-color: var(--bgc-color1);
@@ -139,17 +147,15 @@ aside{
 }
 
 
-
 /*//////////////// MAIN ///////////////*/
 
 main{
     width: 67%;
-    margin-left: 33%;
-    font-family: var(--ff-subtitle);
+    margin-left: 30%;
 }
+
 .mainSet{
-    width: 95%;
-    margin-top: -470px;
+    margin-top: -440px;
 }
 .mainSect{
     margin: 15px 0;
@@ -192,13 +198,8 @@ pre{
     padding: 25px 0;
     line-height: 38px;
 }
-hr{
-    border: 0.05px solid #333fff;
-}
-.mainSect:last-child{
-    padding-bottom: 50px;
-}
-    /*//////////////// MAIN ///////////////*/
+
+/*//////////////// FOOTER ///////////////*/
 
 footer{
     height: 600px;
