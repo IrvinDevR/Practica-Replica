@@ -32,7 +32,17 @@ body video{
 
 header{
     height: 80px;
-    margin-top: 15px;
+    padding-top: 10px;
+    padding-bottom: 40px;
+    margin-bottom: 25px;
+    position: sticky;
+    top: 0;
+    background: linear-gradient(
+        180deg,
+        rgba(0,0,0,1), 
+        rgba(0,0,0,0) 
+    );
+    z-index: 500;
 }
 .logo{
     display: flex;
@@ -117,7 +127,7 @@ img[alt="hero"]{
 aside{
     width: 25%;
     position: sticky;
-    top: 25px;
+    top: 100px;
     padding: 0 0 0 25px;
     margin: 20px;
     max-width: 350px;
@@ -156,7 +166,7 @@ main{
 .mainSet{
     position: sticky;
     top: 0;
-    margin-top: -470px;
+    margin-top: -520px;
 }
 .mainSect{
     margin: 15px 0;
@@ -178,12 +188,19 @@ main{
     line-height: 22px;
     font-family: var(--ff-paragraph);
 }
+.mainSection code:hover{
+    background-color: rgb(107, 80, 80);
+    color: #fff;
+}
 .mainSection code{
     font-size: 16px;
     border: 1px solid #333666;
     background-color: var(--bgc-color1);
     padding: 0 5px;
     font-weight: 300;
+}
+pre:hover{
+    background-color: #fff;
 }
 pre{
     border: 1px solid #333666;
@@ -198,12 +215,16 @@ pre{
     padding: 25px 0;
     line-height: 38px;
 }
+.sugerencia h2{
+    font-family: var(--ff-subtitle);
+    text-align: center;
+}
 .sugerencia h2 a{
     color: var(--bgc-color2);
 }
 
 img[alt="etiquetas"], img[alt="atributos"]{
-    width: 99%;
+    width: 100%;
 }
 
 /*//////////////// FOOTER ///////////////*/
